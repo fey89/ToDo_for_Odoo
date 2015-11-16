@@ -17,13 +17,6 @@ class TodoTask(models.Model):
 		done_recs.write({'active':False})
 		return True
 
-	@api.model
-	def create(self, vals):
-		# Code before create
-		# Can use the `vals` dict
-		new_record = super(TodoTask, self).create(vals)
-		# Code after create
-		# Can use the `new` record created
-		return new_record
+
 
 	
