@@ -77,6 +77,18 @@
 			</field>
 		</record>
 
+		<record id="view_graph_todo_task" model="ir.ui.view">
+			<field name="name">view_graph_todo_task</field>
+			<field name="model">todo.task</field>
+			<field name="arch" type="xml">
+				<graph type="pivot">
+					<!--<field name="stage" type="col" />-->
+					<field name="user_id" />
+					<field name="date_deadline" interval="week" />
+					<field name="x_effort_estimate" type="measure" />
+				</graph>
+			</field>
+		</record>
 	</data>
 
 </openerp>
