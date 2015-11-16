@@ -54,7 +54,7 @@ class TodoTask(models.Model):
     
     _sql_constraints = [('todo_task_name_uniq','UNIQUE (name, user_id,active)','Task title must be unique!')]
 
-    #effort_estimate = fields.Integer('Effort Estimate')
+    x_effort_estimate = fields.Integer('Effort Estimate')
     
     @api.one
     @api.depends('stage_id.fold')
