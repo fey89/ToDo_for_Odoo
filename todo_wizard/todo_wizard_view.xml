@@ -28,5 +28,12 @@
 		<!-- More button Action -->
 		<act_window id="todo_app.action_todo_wizard" name="To-Do Tasks Wizard" src_model="todo.task" res_model="todo.wizard"
 		view_mode="form" target="new" multi="True" />
+
+		<menuitem id="menu_todo_task_wizard"
+			name="To-Do Wizard"
+			parent="todo_ui.menu_todo_task_main" sequence="20"
+			action="todo_app.action_todo_wizard" 
+			/>
+
 	</data>
 </openerp>
